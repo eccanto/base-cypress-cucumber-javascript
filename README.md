@@ -5,7 +5,7 @@
 Basic example of using Cypress with Cucumber (BDD). This `Gherkin` example includes:
 - Basic Scenario
 - Scenario Outline
-- tagged tests
+- Tagged tests
 
 *base project*: [cypress-cucumber-preprocessor](https://www.npmjs.com/package/cypress-cucumber-preprocessor)
 
@@ -48,11 +48,11 @@ npm test
 ```bash
     Spec                                              Tests  Passing  Failing  Pending  Skipped
 ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ ✔  web/Duckduckgo.feature                 00:20        3        3        -        -        -  │
+│ ✔  web/Duckduckgo.feature                  00:20        3        3        -        -        -  │
 ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ ✔  web/Ecosia.feature                     00:40        3        3        -        -        -  │
+│ ✔  web/Ecosia.feature                      00:40        3        3        -        -        -  │
 └────────────────────────────────────────────────────────────────────────────────────────────────┘
-  ✔  All specs passed!                      01:00        6        6        -        -        -
+  ✔  All specs passed!                       01:00        6        6        -        -        -
 ```
 
 ![Output](./images/general_output.png "VSCode Side Bar")
@@ -105,9 +105,9 @@ npm run bundled:all  # cypress run --spec **/*.features
 ```bash
     Spec                                              Tests  Passing  Failing  Pending  Skipped
 ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ ✔  All.features                           00:57        6        6        -        -        -  │
+│ ✔  All.features                            00:57        6        6        -        -        -  │
 └────────────────────────────────────────────────────────────────────────────────────────────────┘
-  ✔  All specs passed!                      00:57        6        6        -        -        -
+  ✔  All specs passed!                       00:57        6        6        -        -        -
 ```
 
 ![Output](./images/bundled_output.png "VSCode Side Bar")
