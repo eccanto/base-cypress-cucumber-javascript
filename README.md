@@ -19,6 +19,7 @@ Basic example of using Cypress with Cucumber (BDD). This `Gherkin` example inclu
     * [Running tagged smoke tests](#running-tagged-smoke-tests)
     * [Running using customized tags](#running-using-customized-tags)
   * [Bundled features files](#bundled-features-files)
+  * [Running tests manually](#running-tests-manually)
 * [Static code analysis tools](#static-code-analysis-tools)
   * [ESLint](#eslint)
     * [Find Problems](#find-problems)
@@ -69,7 +70,7 @@ npm run tag:smoke
 ### Running using customized tags
 
 ```bash
-./node_modules/.bin/cypress-tags run -e TAGS='not @foo and (@bar or @zap)'
+./node_modules/.bin/cypress-tags run -e TAGS='@smoke and @ecosia'
 ```
 
 *more details*: [running-tagged-tests](https://www.npmjs.com/package/cypress-cucumber-preprocessor#running-tagged-tests)
@@ -112,6 +113,16 @@ npm run bundled:all  # cypress run --spec **/*.features
 
 ![Output](./images/bundled_output.png "VSCode Side Bar")
 
+## Running tests manually
+
+Open **`Cypress`** and run the tests manually:
+
+```bash
+npm run cypress:open
+```
+
+![Output](./images/cypress_ui.png "Cypress UI")
+
 # Static code analysis tools
 
 ## ESLint
@@ -139,7 +150,3 @@ npm run lint:fix
 # License
 
 [MIT](./LICENSE)
-
-# Changelog
-
-- 1.0.0 - Initial version.

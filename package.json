@@ -8,7 +8,7 @@
     "cypress:run": "cypress run",
     "pretest": "rm -rf cypress/cucumber-json cypress/screenshots cypress/videos",
     "test": "cypress run --spec \"**/*.feature\"",
-    "tag:smoke": "./node_modules/.bin/cypress-tags run -e TAGS='@smoke'",
+    "tag:smoke": "cypress-tags run -e TAGS='@smoke'",
     "bundled:all": "cypress run --spec **/*.features",
     "lint": "eslint . --ext .js,.json",
     "lint:fix": "npm run lint -- --fix"
@@ -41,7 +41,8 @@
     "eslint-plugin-promise": "^5.1.1"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true,
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/integration/step_definitions/",
     "cucumberJson": {
       "generate": true,
       "outputFolder": "cypress/cucumber-json",
