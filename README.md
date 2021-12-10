@@ -26,7 +26,6 @@ Basic example of using Cypress with Cucumber (BDD). This `Gherkin` example inclu
     * [Fix Automatically](#fix-automatically)
 * [Issues](#issues)
 * [License](#license)
-* [Changelog](#changelog)
 
 # Get started
 
