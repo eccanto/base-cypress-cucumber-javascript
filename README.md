@@ -7,8 +7,6 @@ Basic example of using Cypress with Cucumber (BDD). This `Gherkin` example inclu
 - Scenario Outline
 - Tagged tests
 
-*base project*: [cypress-cucumber-preprocessor](https://www.npmjs.com/package/cypress-cucumber-preprocessor)
-
 # Table of contents
 
 * [Get started](#get-started)
