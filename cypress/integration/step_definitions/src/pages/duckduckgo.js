@@ -1,4 +1,4 @@
-const BaseSearchEngine = require('./base_search_engine');
+const BaseSearchEngine = require('./baseSearchEngine');
 
 class DuckDuckGoPage extends BaseSearchEngine {
     _url = 'https://duckduckgo.com/';

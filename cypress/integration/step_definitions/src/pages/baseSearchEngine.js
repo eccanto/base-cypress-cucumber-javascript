@@ -16,10 +16,6 @@ class BaseSearchEngine {
         }
     }
 
-    say() {
-        throw new Error("Method 'say()' must be implemented.");
-    }
-
     load() {
         cy.visit(this._url);
         cy.get('body').should('be.visible');
