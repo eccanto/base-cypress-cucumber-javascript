@@ -1,16 +1,14 @@
 {
-  "name": "bdd-cypress-cucumber-javascript-example",
+  "name": "base-cypress-cucumber-javascript",
   "version": "1.0.0",
   "description": "BDD, Cypress + Cucumber + Javascript",
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "pretest": "rm -rf cypress/cucumber-json cypress/screenshots cypress/videos",
-    "test": "cypress run --spec \"**/*.feature\"",
-    "tag:smoke": "cypress-tags run -e TAGS='@smoke'",
-    "bundled:all": "cypress run --spec **/*.features",
-    "lint": "eslint . --ext .js,.json",
+    "pretest": "rm -rf cypress/screenshots cypress/videos",
+    "test": "cypress run",
+    "tag:smoke": "cypress run --env tags='@smoke'",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
   "keywords": [
@@ -28,26 +26,26 @@
   },
   "license": "MIT",
   "dependencies": {
-    "cypress": "^9.1.1",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.8.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsonc": "^2.0.0",
+    "eslint": "^8.36.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsonc": "^2.7.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1"
+    "eslint-plugin-promise": "^6.1.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "step_definitions": "cypress/integration/step_definitions/",
-    "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cypress/cucumber-json",
-      "filePrefix": "",
-      "fileSuffix": ".cucumber"
+    "stepDefinitions": [
+      "cypress/e2e/steps/**/*.js"
+    ],
+    "html": {
+      "enabled": true
     }
   }
 }
