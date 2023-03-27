@@ -16,7 +16,6 @@ Basic example of using Cypress with Cucumber (BDD). This `Gherkin` example inclu
   * [Running tagged tests](#running-tagged-tests)
     * [Running tagged smoke tests](#running-tagged-smoke-tests)
     * [Running using customized tags](#running-using-customized-tags)
-  * [Bundled features files](#bundled-features-files)
   * [Running tests manually](#running-tests-manually)
 * [Static code analysis tools](#static-code-analysis-tools)
   * [ESLint](#eslint)
