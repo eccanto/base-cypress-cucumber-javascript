@@ -2,7 +2,7 @@
   "name": "base-cypress-cucumber-javascript",
   "version": "1.0.0",
   "description": "BDD, Cypress + Cucumber + Javascript",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "cypress:open": "cypress open",
     "pretest": "rm -rf cypress/screenshots cypress/videos",
@@ -26,16 +26,16 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^16.0.0",
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
-    "cypress": "^12.8.1"
+    "cypress": "^13.6.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.36.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsonc": "^2.7.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsonc": "^2.11.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1"
   },
